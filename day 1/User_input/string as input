@@ -1,0 +1,16 @@
+// header
+#include<iostream>
+using namespace std;
+// main function
+int main()
+{
+    //  initialize 'a' as string
+  string a;
+//   display message to take input
+  cout<<"enter a string to display";
+//   taking input by user using "cin"
+  cin>>a;
+//   display string entered by user
+  cout<<"string entered by you = "<<a;
+    return 0;
+}
