@@ -1,0 +1,15 @@
+// header
+#include<iostream>
+using namespace std;
+// main function
+int main()
+{
+    // initialising two  integer value a & b. and use c to display sum of two numbers. 
+    int a=8;
+    int b= 2;
+    int c;
+    c = a+b;
+    // display the sum of a & b as (a+b)
+    cout<<"a+b = "<<c;
+    return 0;
+}
