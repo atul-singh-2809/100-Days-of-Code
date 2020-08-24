@@ -1,0 +1,26 @@
+// header
+#include <iostream>
+using namespace std;
+// main function
+int main()
+{
+//    initializing a & b as int
+    int a,b;
+    // display msg to take input
+    cout<<"enter two number";
+    // taking input
+    cin>>a>>b;
+    //  we are using  if else loop control
+    // if a & b both are greater than display their product
+    if(a>2 && b>2)
+    {
+        cout<< a*b;
+    }
+    // otherwise display sum of both
+    else
+    {
+        cout<<a+b;
+    }
+    
+    return 0;
+}
