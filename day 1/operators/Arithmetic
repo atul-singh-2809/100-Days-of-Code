@@ -1,0 +1,24 @@
+// header
+#include <iostream>
+using namespace std;
+// main function
+int main()
+{
+    // initilizing num1 & num2 as integer
+    int num1, num2;
+    // display msg for taking input
+    cout << "enter two number for performing operation";
+    // to take two input from user as num1 and num2
+    cin >> num1 >> num2;
+    // for adding both num1 & num2 and display as sum
+    cout << "\n num1+num2 = " << num1 + num2;
+    // for sub both num1 & num2 and display as diff
+    cout << "\n num1-num2 = " << num1 - num2;
+    // for calculating num1 & num2 and display as div
+    cout << "\n num1/numm2 = " << num1 / num2;
+    // for multiplying both num1 & num2 and display as product
+    cout << "\n num1*num2 = " << num1 * num2;
+    // for calculating mode of  both num1 & num2 and display as mode
+    cout << "\n num1 % num2 = " << num1 % num2;
+    return 0;
+}
