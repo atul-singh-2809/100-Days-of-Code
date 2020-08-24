@@ -1,0 +1,16 @@
+// header
+#include<iostream>
+using namespace std;
+// main function
+int main()
+{
+    //  initialize 'a' as int
+  int a;
+//   display message to take input
+  cout<<"enter a integer to display";
+//   taking input entered by user
+  cin>>a;
+//   display integer entered by user
+  cout<<"integer entered by you = "<<a;
+    return 0;
+}
