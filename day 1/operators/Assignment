@@ -1,0 +1,22 @@
+// header
+#include <iostream>
+using namespace std;
+// main function
+int main()
+{
+    // initilizing num and num2 as int
+    int num,num2;
+    // display msg for taking input
+    cout<<"enter first number & second number";
+    // taking inpput using cin
+    cin>>num>>num2;
+    // num++ = num + 1  &  assign new value of num in num. 
+    num++;
+    // disply new num
+    cout<<num;
+    // adding 3 in num2 & assign new value og num2.
+    num2+=3;
+    // display new num2
+    cout<<"\n"<<num2;
+    return 0;
+}
