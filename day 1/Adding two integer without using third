@@ -1,0 +1,13 @@
+// header
+#include<iostream>
+using namespace std;
+// main function
+int main()
+{
+    // initialising two  integer value a & b .And printing sum without using third integer
+    int a=8;
+    int b= 2;
+    //display direct sum of a & b without using third integer
+    cout<<"a+b = " <<a+b;
+    return 0;
+}
