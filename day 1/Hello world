@@ -1,0 +1,9 @@
+// header (io means input output stream)
+#include<iostream>
+using namespace std;
+// integer and main function
+int main(){
+  // for printing hello world
+  cout<<"hello world";  
+  return 0;
+}
