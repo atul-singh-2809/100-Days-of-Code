@@ -1,0 +1,13 @@
+// header
+#include <iostream>
+using namespace std;
+// main function
+int main()
+{
+    // initalize two integer a &b
+    int a =7;
+    int b =8;
+    // printing boolean as
+    cout<<  (a != b);
+    return 0;
+}
