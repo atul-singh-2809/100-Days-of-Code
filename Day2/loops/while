@@ -1,0 +1,15 @@
+// header
+#include <iostream>
+using namespace std;
+// main function
+int main()
+{
+    // initilizing a =0
+    int a = 0;
+    // using while loop to print number from 0 to 5
+    while (a <= 5)
+    {
+        cout << "\n"
+             << a++;
+    }
+}
