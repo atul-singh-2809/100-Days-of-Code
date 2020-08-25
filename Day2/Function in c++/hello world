@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+// definition of function
+void myfun(){
+    cout<<"hello world in function";
+}
+int main(){
+    // function calling
+    myfun();
+    return 0;
+}
