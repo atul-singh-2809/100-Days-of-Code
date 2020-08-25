@@ -1,0 +1,28 @@
+// header
+#include <iostream>
+using namespace std;
+// main function
+int main()
+{
+    // initilizing age as int
+    int age;
+    // display msg to take input
+    cout<<"enter age to check if is/she is eligible for vote or not";
+    // taking input using cin to check
+    cin>>age;
+    // "if conditional" is used to check given age is valid or note(i.e - when age entered by user is greater to or equals to 18 and below to 90 it will print eligible)
+   if(age>=18 && age<=90)
+   {
+       cout<<"eligible for vote";
+   }
+//    in case when "if "condition is not satisfying it will check this under which when age is below 18 and above 1 ,it will print not eligible.
+   else if(age<18 && age>=1)
+   {
+       cout<<"not eligible for vote";
+   }
+   else 
+//    in case when all of above cases are not satisfied it will print this msg.
+       cout<<"invalid age! please re-enter age";
+   }
+    return 0;
+}
