@@ -1,0 +1,16 @@
+// header
+#include <iostream>
+using namespace std;
+// main function
+int main()
+{
+    // initilize num as int
+    int num;
+    // display msg to take input
+    cout<<"enter a number to check whether it is +ve or -ve";
+    // taking input
+    cin>>num;
+    // first thing under this conditional statement is that we take the condition if the condition satisfies the condition it will print msg "=ve int " if not it will print "-ve nummber".
+    (num>=1)?cout<<"+ve int":cout<<"-ve int";
+    return 0;
+}
