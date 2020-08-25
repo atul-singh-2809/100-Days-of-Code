@@ -1,0 +1,44 @@
+// header
+#include <iostream>
+using namespace std;
+// main function
+int main()
+{
+    // initilizing a & b as int
+    int a,b;
+    // initilizing operator as char
+    char op;
+    // display msg to take input
+    cout<<"enter two number a & b";
+    // taking two int as input
+    cin>>a>>b;
+    // display msg to select any operator 
+    cout<<"select any operator(+,-,*,/)";
+    // taking operator as input
+    cin>>op;
+    // switch statement start and under condition we are using operator
+    switch (op)
+    {
+        // when user select "+" as operator this will execute 
+        case '+':
+        cout<<"a+b = "<<a+b;
+        // we use break to come out of loop when the condition matches and print the msg
+        break;
+
+        case '-':
+        cout<<"a-b = "<<a-b;
+        break;
+        
+        case '*':
+        cout<<"a*b = "<<a*b;
+        break;
+        
+        case '/':
+        cout<<"a/b = "<<a/b;
+        break;
+        // when user select any invalid operator 
+        default:
+        cout<<"invalid operator";
+    }
+    return 0;
+}
