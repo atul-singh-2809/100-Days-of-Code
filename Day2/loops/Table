@@ -1,0 +1,20 @@
+// header
+#include<iostream>
+using namespace std;
+// main function
+int main()
+{
+    // initializing a as int
+    int a;
+    // display msg to take input 
+    cout<<"enter whose table do u want to print";
+    // taking input from user which table user want to print 
+    cin>>a;
+    // for loop to print table
+    // underr this first i =1 then condition should be checked i<10 and if it satisfies it will go inside and print msg writen inside for loop then "i++" executed when the condition  i<=10 will became wrong it will come out of loop
+    for(int i=1; i<=10;i++)
+    {
+        cout<<"\n"<<a<<" * "<<i<<" = " <<a * i;
+    }
+    return 0;
+}
