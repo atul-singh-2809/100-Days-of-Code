@@ -1,0 +1,30 @@
+// header
+#include <iostream>
+using namespace std;
+// main function
+int main()
+{
+    // initializing respose as charcter
+    char res;
+    do{
+    // initilizing a as int
+    int a ;
+    // display msg to take input
+    cout<<"enter number to print sequence from that number to 100";
+    // taking input
+    cin>>a;
+    // while loop to print 
+    while (a <= 100)
+    {
+        cout << "\n"
+             << a++;
+    }
+    // display msg to take response that if u want to run loop once again
+    cout<<"do u want to continue(y/n)";
+    // taking response as input
+    cin>>res;
+    }
+    // in case we input res= yes it will run loop again if res != y it will stop and come out of loop 
+    while(res=='y');
+    return 0;
+}
