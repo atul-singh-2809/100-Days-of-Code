@@ -1,0 +1,22 @@
+// header
+#include <iostream>
+using namespace std;
+// main function
+int main()
+{
+    // initilizing num as int
+    int num;
+    // display msg to take input
+    cout<<"enter number to check is it positive";
+    // taking input using cin to check
+    cin>>num;
+    // "if conditional" is used to check +ve
+    if(num>=1)
+    {
+        // display msg "+ve " if it satisfied the condition 
+        cout<<"+ve number";
+    }
+    // it will be printed in both case whether it satisfied or not the condition
+     cout<<"\n you entered "<<num;
+    return 0;
+}
