@@ -1,0 +1,20 @@
+// header
+#include <iostream>
+using namespace std;
+// main function
+int main()
+{
+    // initilizing a as int
+   int a;
+   // display msg to take input
+   cout<<"enter number upto which you want to print number";
+//    taking input
+   cin>>a;
+//    for loop for printing nnumber starting from 0 to upto number entered by user
+// (i.e- first i=0 then it check i<a then print i then done i++ and so on... loops run until i<a doesnot proved run)
+   for(int i =0;i<a;i++ )
+   {
+       cout<<i;
+   }
+    return 0;
+}
