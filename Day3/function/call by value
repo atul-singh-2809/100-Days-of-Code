@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+void swap(int x, int y)/*decalaration of function*/
+{
+    // definition
+    int z;
+    z=x;
+    x=y;
+    y=z;
+    cout<<"a="<<x<<"\n"<<"b="<<y;/*return value and print after swaping*/
+}
+int main(){/*main function start*/
+    int a,b;/*display msg to take input*/
+    cin>>a>>b;/* taking input*/
+    swap(a,b);/*calling swap function*/
+    return 0;
+}
