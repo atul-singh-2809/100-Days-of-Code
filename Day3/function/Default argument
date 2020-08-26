@@ -1,0 +1,17 @@
+#include<iostream> /*header*/
+using namespace std;
+int sum (int x=1 , int y=2 , int z=3);   /*declaration of function with default argument*/
+
+int main(){                                        /*main function started*/
+    int a,b,c;
+    cin>>a>>b>>c;                                 /*taking user input*/
+    cout<<"\n sum of all three input and no default = "<<sum(a,b,c);  /* replace all default argument by user input*/
+    cout<<"\n sum of two user input and one default = "<<sum(a,b);  /* replace two default argument by user input and one remain default*/
+    cout<<"\n sum of one user input and rest default = "<<sum(a);  /* replace one default argument by user input and two remain default*/
+    cout<<"\n sum of all default argument = "<<sum();             /* all  remain default as no user input are passed*/
+    return 0;
+}
+// defination of function
+int sum( int x , int y ,int z){
+    return x+y+z;
+}
