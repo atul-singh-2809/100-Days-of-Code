@@ -1,0 +1,31 @@
+// header
+#include <iostream>
+using namespace std;
+// function to calculate greatest number
+// declaration
+int great(int x, int y)
+{
+    // defination
+    if (x > y)
+        return x;
+    else
+    {
+        return y;
+    }
+}
+// main function start
+int main()
+{
+    int a;
+    int b;
+    // msg to take input
+    cout << "Enter number 1st & 2nd";
+    // taking input
+    cin >> a >> b;
+    // calling great function by using a new initialize c of int type
+    int c = great(a, b);
+    // display msg return from function and execution of function
+    cout << "greatest number =" << c;
+
+    return 0;
+}
