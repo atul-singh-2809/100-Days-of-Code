@@ -1,0 +1,26 @@
+#include <iostream>/*header*/
+using namespace std;
+void swa(int *, int *); /*decleration*/
+int main()
+{ /*main function started*/
+    int a, b;
+    cin >> a >> b; /*taking input*/
+    cout << "before"
+         << "\n"
+         << "a=" << a << "\n"
+         << "b=" << b;
+    swa(&a, &b); /*calling function*/
+    cout << "\n after \n"
+         << "a=" << a << "\n"
+         << "b=" << b;
+    return 0;
+}
+// definition
+void swa(int *x, int *y)
+{
+    int t;
+    t = *x;
+    *x = *y;
+    *y = t;
+    return;
+}
