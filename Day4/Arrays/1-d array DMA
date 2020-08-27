@@ -1,0 +1,22 @@
+// allocating memory for the array at run time .
+#include <iostream> /*header*/
+using namespace std;
+int main()
+{
+    int n;
+    int arr[n];                                       /* initializing array as arr */
+    cout << "enter how many time u want to run loop"; /*msg to take input such that it will provide space during run time*/
+    cin >> n;                                         /*taking input*/
+    cout << "enter numbers";
+    for (int i = 0; i < n; i++) /* taking input into array via using for loop*/
+    {
+        cin >> arr[i];
+    }
+    cout << "number entered by you are";
+    for (int i = 0; i < n; i++) /* displaying data entered by user using for loop*/
+    {
+        cout << "\n"
+             << arr[i];
+    }
+    return 0;
+}
