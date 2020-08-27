@@ -1,0 +1,18 @@
+#include <iostream> /*header*/
+using namespace std;
+int main()
+{                /*main function*/
+    int arr[10]; /*initizting array as arr which storage capacity with 10 int*/
+    cout << "enter number to fill in array";
+    for (int i = 0; i < 10; i++) /* taking input in arr using for loop*/
+    {
+        cin >> arr[i];
+    }
+    cout << "\n number entered by you are";
+    for (int i = 0; i < 10; i++)
+    { /*display input by using again for loop*/
+        cout << "\n"
+             << arr[i];
+    }
+    return 0;
+}
