@@ -1,0 +1,18 @@
+#include <iostream>/*header*/
+using namespace std;
+int main()   /* main function start*/
+{
+    int arr[3][3];  /* initializing arr with 2-d array*/
+    for (int i = 0; i < 3; i++)    /*for loop to taking input*/
+        for (int j = 0; j < 3; j++)
+        {
+            cin >> arr[i][j];
+        }
+    cout << "element entered by user";   /* printing elements using for loop*/
+    for (int i = 0; i < 3; i++)
+        for (int j = 0; j < 3; j++)
+        {
+            cout << arr[i][j] <<"\t";
+        }
+    return 0;
+}
