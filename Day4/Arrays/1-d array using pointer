@@ -1,0 +1,22 @@
+#include <iostream> /*header*/
+using namespace std;
+int main()
+{ /*main function started*/
+    int n;
+    cout << "enter how many time do u want to continue";
+    cin >> n;                   /* taking input at run time to execcute program*/
+    int *p = new int[n];        /*initializing pointer p such that it may store array*/
+    for (int i = 0; i < n; i++) /*taking input using for loop*/
+    {
+        cin >> p[i];
+    }
+    cout << "\n"
+         << "number enterd by u are";
+    for (int i = 0; i < n; i++) /* printing number input by user using for loop*/
+    {
+        cout << "\n"
+             << p[i];
+    }
+    delete p; /* deleting pointer*/
+    return 0;
+}
