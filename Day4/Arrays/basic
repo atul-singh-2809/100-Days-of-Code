@@ -1,0 +1,11 @@
+#include<iostream>/*header*/
+using namespace std;
+int main()/*main function*/
+{
+    int arr[5];   /* initializing array as arr by 5 such that it will store 5 value of int type*/
+    arr[0] = 234;  /*putting value at '0' index */
+    arr[1] = 345;
+    arr[4] = 978;
+    cout<<arr[0]; /* printing value stored at index '0'*/
+    return 0;
+}
