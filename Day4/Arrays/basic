@@ -9,3 +9,23 @@ int main()/*main function*/
     cout<<arr[0]; /* printing value stored at index '0'*/
     return 0;
 }
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------
+Another way
+
+
+#include<iostream>/*header*/
+using namespace std;
+int main()/*main function*/
+{
+    int arr[]={5,6,8,9,3,67,98}; /*initialzing  arr along with value in single line*/
+    cout<<arr[6]; /* printing value stored at index '6'*/
+    return 0;
+}
