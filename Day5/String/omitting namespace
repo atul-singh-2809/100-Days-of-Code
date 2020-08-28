@@ -1,0 +1,12 @@
+#include <iostream>/*header*/
+#include <string>  /*new headr string*/
+
+int main()
+{                         /*main function started*/
+    std::string greeting; /*declaration of string*/
+    std::cout << "enter your greeting msgg";
+    std::cin >> greeting; /*taking input*/
+    std::cout << "msg entered by user is :-";
+    std::cout << greeting; /*display msg entered by userr*/
+    return 0;
+}
