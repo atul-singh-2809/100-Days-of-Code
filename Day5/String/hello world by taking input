@@ -1,0 +1,9 @@
+#include <iostream>/*header*/
+using namespace std;
+int main()
+{                                   /*main function*/
+    string greet;                   /* initializing greet as string*/
+    cin >> greet;                   /* taking string as input*/
+    cout << "you entered" << greet; /* printing input taking from user*/
+    return 0;
+}
