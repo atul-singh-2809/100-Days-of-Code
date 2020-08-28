@@ -1,0 +1,13 @@
+#include <iostream>/*header*/
+using namespace std;
+int main()
+{                                    /*main function*/
+    string fname, lname;             /*initialization*/
+    cout << "enter your first name"; /*msg to take input*/
+    cin >> fname;                    /* first name as input*/
+    cout << "enter your last name";
+    cin >> lname; /*second name as input*/
+    cout << " your full name is";
+    cout << fname + " " + lname; /*showing full name after concatenation*/
+    return 0;
+}
