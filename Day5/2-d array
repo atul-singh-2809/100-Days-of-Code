@@ -1,0 +1,25 @@
+#include <iostream>/*header*/
+using namespace std;
+int main() /*main function started*/
+{
+    int **p, nr, nc, r, c;                     /* initialization*/
+    cout << "enter number of rows and column"; /* display msg to take input no of rows and col*/
+
+    cin >> nr >> nc;         /*taking input*/
+    p = new int *[nr];       /* creating pointer*/
+    for (r = 0; r < nr; r++) /*  for loop for creating pointer for no of rowws*/
+        p[r] = new int[nc];
+    cout << "enter " << nr * nc << "elements";
+    for (r = 0; r < nr; r++) /* for loop for taking input*/
+        for (c = 0; c < nc; c++)
+            cin >> p[r][c];
+    cout << "elements are \n";
+    for (r = 0; r < nr; r++) /* ffor loop for displaying inputed by user*/
+        for (c = 0; c < nc; c++)
+        {
+            cout << p[r][c] << "\n";
+        }
+    cout << endl;
+    delete p; /* deleting pointer*/
+    return 0;
+}
