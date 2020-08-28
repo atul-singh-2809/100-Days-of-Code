@@ -1,0 +1,10 @@
+#include <iostream> /*header*/
+using namespace std;
+int main()
+{                    /*main function started*/
+    string fullname; /*initialization*/
+    cout << "enter your fullname along with space";
+    getline(cin, fullname);                         /*taking input of string along with space using "getline"*/
+    cout << "name entered by user is " << fullname; /* printing input given by user*/
+    return 0;
+}
