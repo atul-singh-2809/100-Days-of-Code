@@ -1,0 +1,13 @@
+#include <bits/stdc++.h> 
+using namespace std; 
+int main() /*main function*/
+{ 
+    string str; 
+    cin>>str;  /*taking input*/
+  
+    // Reverse str[begin..end] 
+    reverse(str.begin(), str.end()); 
+  
+    cout << str;  /*print*/
+    return 0; 
+} 
