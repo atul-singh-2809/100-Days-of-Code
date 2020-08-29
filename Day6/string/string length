@@ -1,0 +1,14 @@
+#include <iostream>/*header*/
+using namespace std;
+int main()
+{ /*main function started*/
+    string str;
+    cin >> str; /*taking input in str*/
+    cout << "\n"
+         << str; /*showing string inputed by userr*/
+    cout << "\n"
+         << "lenght of string entered by you" << str.length(); /*for calculating length of string*/
+    cout << "\n"
+         << "capacity of string " << str.capacity(); /*for calculating capacity of string*/
+    return 0;
+}
