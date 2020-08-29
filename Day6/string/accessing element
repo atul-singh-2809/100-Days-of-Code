@@ -1,0 +1,19 @@
+#include <iostream>/*header*/
+using namespace std;
+void all(string str)
+{ /*declaration & definition of function to access all string*/
+    char ch;
+    int l = str.length();
+    for (int i = 0; i < l; i++)
+    {
+        ch = str.at(i);
+        cout << ch << " ";
+    }
+}
+int main() /*main function started*/
+{
+    string str;
+    cin >> str; /*taking input */
+    all(str);   /*call*/
+    return 0;
+}
