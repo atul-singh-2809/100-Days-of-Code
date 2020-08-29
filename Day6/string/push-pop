@@ -1,0 +1,16 @@
+#include <iostream> /*header*/
+using namespace std;
+int main() /*main function started*/
+{
+    string a; /*initializing*/
+    cin >> a; /*taking input*/
+    cout << "you entered :- " << a;
+    cout << "\nafter push";
+    a.push_back('s'); /*after using push_back function it means pushing something at the end of string*/
+    cout << "\n"
+         << a;
+    a.pop_back(); /*after using pop up function it means pop up something from the of the string*/
+    cout << "\nafter pop-up";
+    cout << a;
+    return 0;
+}
