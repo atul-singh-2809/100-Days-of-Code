@@ -1,0 +1,17 @@
+#include <iostream> /*header*/
+using namespace std;
+class demo  /* class decleration*/
+{
+public:       
+    void language();
+};
+void demo ::language()                     /* accessing and defining outside using scope resolution*/
+{
+    cout << "c++ is  very important language";
+}
+int main()      /* main function*/
+{
+    demo d;          /*object formation*/
+    d.language();       /*call*/
+    return 0;
+}
