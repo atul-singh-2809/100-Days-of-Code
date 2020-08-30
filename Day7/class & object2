@@ -1,0 +1,18 @@
+#include <iostream> /*header*/
+using namespace std;
+class box
+{ /* class declaration*/
+public:
+    int length;
+    int width;
+    int height;
+};
+int main()
+{                    /*main function*/
+    box box1;        /*object created*/
+    box1.length = 8; /* accessing the data member*/
+    box1.width = 9;
+    box1.height = 10;
+    cout << "volume of box is:" << box1.height * box1.length * box1.width;
+    return 0;
+}
