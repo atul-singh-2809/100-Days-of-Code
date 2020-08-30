@@ -1,0 +1,39 @@
+#include <iostream> /* header*/
+
+using namespace std;
+
+struct Books
+{ /* declaration and defination*/
+    char title[50];
+    char author[50];
+    char subject[100];
+    int book_id;
+
+    void getdata()
+    { /*taking input for struct*/
+        cout << "enter title name";
+        cin >> title;
+        cout << "enter name of author";
+        cin >> author;
+        cout << "enter name of subject";
+        cin >> subject;
+        cout << "enter book id";
+        cin >> book_id;
+    }
+    void showdata()
+    { /* showing input by the user*/
+        cout << "title name is" << title;
+        cout << "\n author name is " << author;
+        cout << "\n subject namme is " << subject;
+        cout << "\n book id is " << book_id;
+    }
+};
+
+int main() /* main function started*/
+{
+
+    struct Books book1;
+    book1.getdata();  /*calling for taking inputt*/
+    book1.showdata(); /* showing input taking by user*/
+    return 0;
+}
