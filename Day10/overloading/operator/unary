@@ -1,0 +1,29 @@
+#include <iostream> /* header*/
+using namespace std;
+class test                             /*class*/
+{
+public:
+    int x;
+    void getdata()
+    {
+        cout << "enter a number";
+        cin >> x;
+    }
+
+    int operator++()                      /* operator overloading*/
+    {
+        ++x;
+    }
+    void display()
+    {
+        cout << x;
+    }
+};
+int main()
+{
+    test t;               /* creating object*/
+    t.getdata();
+    ++t;                 /* overloading */
+    t.display();       /* call  for display*/
+    return 0;
+}
