@@ -1,0 +1,39 @@
+//  funcion overloading
+#include <iostream> /*header*/
+using namespace std;
+int sum(int x, int y, int z)
+{ /*function decleration & defination*/
+    return (x + y + z);
+}
+
+float sum(float x, float y, float z)
+{ /* function declaration  & defination*/
+    return (x + y + z);
+}
+int main()
+{ /* main function started*/
+    int a, b, c;
+    float p, q, r;
+    char d;
+    cout << "if u want to add integer type I if u want to enter float f ";
+    cin >> d;
+    switch (d)
+    {
+    case 'i':
+        cout << "enter 3 integer number";
+        cin >> a >> b >> c;                       /* input integer*/
+        cout << " your sum  is:" << sum(a, b, c); /* call sum function for integer*/
+        break;
+
+    case 'f':
+        cout << "Enter float number";
+        cin >> p >> q >> r;                    /* input float*/
+        cout << "your sum is" << sum(p, q, r); /* call sum function for float*/
+        break;
+
+    default:
+        cout << "invalid";
+        break;
+    }
+    return 0;
+}
