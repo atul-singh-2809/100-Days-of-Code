@@ -1,0 +1,30 @@
+#include <iostream> /* header*/
+using namespace std;
+class A
+{ /*base class*/
+public:
+    int sum(int x, int y, int z) /* function declaration & defination in base class*/
+    {
+        return (x + y + z);
+    }
+};
+
+class B : public A
+{ /* derived class*/
+public:
+    int sum(int x, int y, int z)
+    { /* function declaration & defination in base class*/
+        return (x + y);
+    }
+};
+
+int main()
+{ /*main function started */
+    int a, b, c;
+    cin >> a >> b >> c; /* input*/
+    A obj;              /* object */
+    B obj2;
+    cout << obj.sum(a, b, c); /*call of base clas*/
+    cout << obj.sum(a, b, c); /* call of derived class*/
+    return 0;
+}
