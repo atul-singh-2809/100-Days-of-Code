@@ -1,0 +1,27 @@
+#include <iostream> /* header*/
+using namespace std;
+class A /*base class*/
+{
+public:
+    virtual void show() /* function with virtual keyword*/
+    {
+        cout << "base class";
+    }
+};
+class B : public A /* derived class*/
+{
+public:
+    void show() /* normal function*/
+    {
+        cout << "derived class";
+    }
+};
+
+int main() /* main function*/
+{
+    A *bptr;      /* creating pointer*/
+    B obj;        /* creating object of derived class*/
+    bptr = &obj;  /* referance */
+    bptr->show(); /* print show function using this pointer*/
+    return 0;
+}
