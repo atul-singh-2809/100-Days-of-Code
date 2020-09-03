@@ -1,0 +1,26 @@
+#include <iostream> /*header*/
+using namespace std;
+class enc
+{        /*class */
+private: /* private so that it can't  be access from outside this class*/
+    int c;
+
+public:
+    void setdata() /* definition of functio*/
+    {
+        cout << "enter number";
+        cin >> c;
+    }
+    void showdata()
+    {
+        cout << "\n numbr is" << c;
+    }
+};
+
+int main() /*main function*/
+{
+    enc b; /*object created*/
+    b.setdata();
+    b.showdata(); /*call*/
+    return 0;
+}
