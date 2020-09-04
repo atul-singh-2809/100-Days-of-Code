@@ -1,0 +1,29 @@
+#include <iostream> /* header*/
+
+#include <fstream>
+
+using namespace std;
+
+int main() /* main funciton*/
+
+{
+
+    ofstream filestream("testout.txt"); /* creating file and writing inside that file*/
+
+    if (filestream.is_open())
+
+    {
+
+        filestream << "Welcome to 100 days of code \n";
+
+        filestream << "C++ Tutorial.\n";
+
+        filestream.close();
+    }
+
+    else
+
+        cout << "File opening is fail.";
+
+    return 0;
+}
