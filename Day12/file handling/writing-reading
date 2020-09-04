@@ -27,3 +27,44 @@ int main() /* main funciton*/
 
     return 0;
 }
+
+
+
+================================================================================================================================================================
+#include <iostream>/* header*/
+
+#include <fstream>
+
+using namespace std;
+
+int main() /* main function*/
+
+{
+
+    string srg;
+
+    ifstream filestream("testout.txt"); /* for reading file from that defintited */
+
+    if (filestream.is_open())
+
+    {
+
+        while (getline(filestream, srg))
+
+        {
+
+            cout << srg << endl;
+        }
+
+        filestream.close();
+    }
+
+    else
+
+    {
+
+        cout << "File opening is fail." << endl;
+    }
+
+    return 0;
+}
