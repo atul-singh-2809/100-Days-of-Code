@@ -1,0 +1,38 @@
+#include <iostream>/*header*/
+using namespace std;
+class shape /*base class */
+{
+protected:
+    int w;
+    int h;
+
+public:
+    virtual int getarea() = 0; /* pure virtual function   declaration*/
+    void setwidth()            /* function declation & defination*/
+    {
+        cout << "Enter width ";
+        cin >> w;
+    }
+    void setheight()
+    {
+        cout << "Enter height";
+        cin >> h;
+    }
+};
+
+class rectangle : public shape /* derived class*/
+{
+public:
+    int getarea() /* defination of virtual function*/
+    {
+        return (w * h);
+    }
+};
+int main() /*main functionn*/
+{
+    rectangle rect;
+    rect.setwidth(); /*call */
+    rect.setheight();
+    cout << "area of triangle is :-" << rect.getarea(); /*calling pure virtual function*/
+    return 0;
+}
