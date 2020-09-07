@@ -1,0 +1,15 @@
+#include <iostream> /* header*/
+using namespace std;
+template <typename T>         /* template*/
+
+T mymax(T x, T y)                /* defination of template*/
+{
+    return (x > y) ? x : y;
+}
+int main()                      /* main function*/
+{
+    cout << mymax<int>(3, 7);                 /* call for tem of int type*/
+    
+    cout << mymax<float>(3.5, 7.9);       /* call for temp of float type*/
+    return 0;
+}
