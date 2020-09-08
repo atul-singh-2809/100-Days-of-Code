@@ -1,0 +1,24 @@
+#include <iostream>  /* header*/
+#include <algorithm> /* header*/
+using namespace std;
+void show(int a[])
+{                            /* function*/
+    for (int i = 0; i < 10; i++)
+        cout << a[i] << " ";
+}
+int main()
+{                                               /* main function*/
+    int a[10] = {5, 4, 3, 8, 9, 3, 2, 6, 1, 0}; /* inputs*/
+    cout << "before sorting";
+    
+    
+    
+    show(a);
+    
+    
+    sort(a, a + 10); /* sorting algo*/
+
+    cout << "after sorting";
+    show(a);
+    return 0;
+}
