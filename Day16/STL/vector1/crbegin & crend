@@ -1,0 +1,15 @@
+#include <iostream>  /* header*/
+#include <algorithm>
+#include <vector>
+using namespace std;
+int main()              /* main function*/
+{
+    vector<int> g1;                 
+    for (int i = 0; i <= 5; i++)
+        g1.push_back(i);
+
+         cout << "\nOutput of crbegin and crend : ";  /* printing in reverse order*/
+    for (auto ir = g1.crbegin(); ir != g1.crend(); ++ir) 
+        cout << *ir << " "; 
+    return 0;
+}
