@@ -1,0 +1,16 @@
+#include <iostream> /* header*/
+#include <algorithm>
+#include <vector>
+using namespace std;
+int main() /* main function*/
+{
+    vector<int> g1;
+    for (int i = 0; i <= 5; i++)
+        g1.push_back(i);
+    cout << "size of vector-" << g1.size() << "\n";
+    cout << "max size of vector-" << g1.max_size() << "\n";
+    cout << " capacity of vector-" << g1.capacity() << "\n";
+    g1.resize(4);
+    cout << "size of vector after resize-" << g1.size();
+    return 0;
+}
