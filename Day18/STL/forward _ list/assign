@@ -1,0 +1,15 @@
+#include<iostream> 
+#include<forward_list> 
+using namespace std; 
+
+int main() 
+{ 
+		forward_list<int> flist1; 
+	flist1.assign({1, 2, 3}); 
+	// Displaying forward lists 
+	cout << "The elements of first forward list are : "; 
+	for (int&a : flist1) 
+		cout << a << " "; 
+	cout << endl; 
+	return 0; 
+} 
