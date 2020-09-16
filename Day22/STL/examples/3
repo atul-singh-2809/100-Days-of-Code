@@ -1,0 +1,12 @@
+#include <iostream>  
+#include <bitset>  
+using namespace std;  
+  
+int main()  
+{  
+bitset<4> b(string("1001"));  
+b[1]=1;  
+b[2]=b[1];  
+cout<< "b :" << b;  
+return 0;  
+}  
