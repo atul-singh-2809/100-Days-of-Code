@@ -1,0 +1,28 @@
+#include <iostream>  
+#include <bitset>  
+using namespace std;  
+int main()  
+{  
+ // initialization  
+bitset<4> b1(string("1100"));  
+bitset<6> b2(string("000000"));  
+// function to check if any of  
+ // its bits are set or not  
+bool result1 = b1.any();  
+if (result1)  
+cout<< b1 << " has a minimum of one-bit set"  
+<<endl;  
+else  
+cout<< b1 << " does not have any bits set"  
+<<endl;  
+// function to check if any of  
+// its bits are set or not  
+bool result2 = b2.any();  
+if (result2)  
+cout<< b2 << "  has a minimum of one-bit set"  
+<<endl;  
+else  
+cout<< b2 << " does not have any bits set"  
+<<endl;  
+return 0;  
+}  
