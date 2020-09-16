@@ -1,0 +1,11 @@
+#include <iostream>  
+#include <bitset>  
+using namespace std;  
+int main()  
+{  
+  bitset<6> b(string("001100"));  
+  b.set();  
+  int a=b.to_ullong();  
+  cout << b << " as an integer is : " << a;  
+   return 0;  
+}  
