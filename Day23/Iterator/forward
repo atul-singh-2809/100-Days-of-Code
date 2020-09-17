@@ -1,0 +1,29 @@
+#include <iostream>  
+#include <fstream>  
+#include <iterator>  
+#include <vector>  
+  
+using namespace std;  
+  
+template<class ForwardIterator>                                       // function template  
+void display(ForwardIterator first, ForwardIterator last)            // display function  
+{  
+ while(first!=last)  
+ {  
+     cout<<*first<<" ";  
+     first++;  
+ }  
+}  
+  
+int main()  
+{  
+  
+  vector<int> a;                          // declaration of vector.  
+  for(int i=1;i<=10;i++)  
+  {  
+      a.push_back(i);  
+  }  
+  display(a.begin(),a.end());                // calling display() function.  
+  
+  return 0;  
+}  
