@@ -1,0 +1,20 @@
+#include <iostream>  
+#include<iterator>  
+#include<vector>  
+using namespace std;  
+int main()  
+{  
+   vector<int> v{1,2,3,4,5};                       // vector declaration  
+   vector<int> ::iterator itr;                        // iterator declaration  
+   vector<int> :: reverse_iterator ritr;         // reverse iterator declaration  
+   for(itr = v.begin();itr!=v.end();itr++)  
+   {  
+       cout<<*itr<<" ";  
+   }  
+   cout<<'\n';  
+   for(ritr = v.rbegin();ritr!= v.rend();ritr++)  
+   {  
+       cout<<*ritr<<" ";  
+   }  
+    return 0;  
+}  
