@@ -1,0 +1,26 @@
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+
+int main()
+{
+  int a[5] = {1,5,8,4,2}; 
+  cout<<is_sorted(a, a+5);
+  /* prints 0 , Boolean false  */
+  
+  vector<int> v1;
+  
+  v1.push_back(8);
+  v1.push_back(4);
+  v1.push_back(5);
+  v1.push_back(1);
+
+  /* now the vector v1 is 8,4,5,1 */
+  cout<<is_sorted(v1.begin() , v1.end() );
+  /* prints 0 */
+  sort(v1.begin() , v1.end() );
+  /* sorts the vector v1 */
+  cout<<is_sorted(v1.begin() , v1.end());
+  /*  prints 1 , as vector v1 is sorted */    
+}
