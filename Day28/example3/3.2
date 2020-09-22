@@ -1,0 +1,20 @@
+
+#include<iostream>
+#include<vector>
+
+int main()
+{
+    vector<int>  v(10) ;    // create a vector of 10 0's
+    vector<int>::iterator i;  // defines an iterator i to the vector of integers
+    
+    i = v.begin();
+    /* i now points to the beginning of the vector v */
+    
+    advance(i,5);
+    /* i now points to the fifth element form the 
+    beginning of the vector v */
+    
+    advance(i,-1);
+    /* i  now points to the fourth element from the 
+    beginning of the vector */ 
+}
