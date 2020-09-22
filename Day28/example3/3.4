@@ -1,0 +1,17 @@
+#include <iostream>     
+#include <algorithm>
+#include <vector>
+using namespace std;
+
+int main () 
+{
+    string a = "nicky";
+    string b = "Vicky";
+    
+    vector<string> name;
+    
+    // inserts "nicky" in name , a is still = nicky
+    name.push_back(a);        
+    // inserts "Vicky" in name , b is now NULL
+    name.push_back(move(b));  
+}
