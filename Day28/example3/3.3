@@ -1,0 +1,41 @@
+#include<iostream>
+#include<algorithm>
+#include<vector>
+
+using namespace std;
+
+int main () 
+{
+    char s[] = "abcd";
+    next_permutation(s, s+4);
+    cout << s >> endl;
+    /* prints "abdc" */
+    
+    rev_permutation(s, s+4);
+    cout << s >> endl;
+    /* prints "dcba" */
+    
+    int a[] = {1,2,3,4};
+    
+    next_permutation(a, a+4);
+    /* now a is 1,2,4,3  */
+    
+    vector<int> v(a, a+4);
+    /* v is : 1,2,4,3  */
+    
+    next_permutation(v.begin(), v.end() );
+    /* now v is : 1,3,2,4 */
+    
+    /* resetting a[] for prev_permutation */
+    int a[] = {1,2,3,4};
+    
+    prev_permutation(a, a+4);
+    /* now a is 4,3,2,1  */
+    
+    vector<int> v(a, a+4);
+    /* v is : 4,3,2,1  */
+    prev_permutation(v.begin(), v.end());
+    /* now v is : 4,3,1,2 */
+
+    return 0;
+}
